@@ -1,6 +1,6 @@
 'use strict';
 
-//****COUNT SHEEP****//
+//**** COUNT SHEEP ****//
 
 const countSheep = sheep => {
   if (sheep === 0) 
@@ -12,8 +12,7 @@ const countSheep = sheep => {
 
 countSheep(10);
 
-//****ARRAY DOUBLE****//
-
+//**** ARRAY DOUBLE ****//
 
 const arrDouble = arr => {
   if (arr.length === 0) 
@@ -22,3 +21,15 @@ const arrDouble = arr => {
 };
 let arr = [1, 2, 3, 4, 5, 6];
 console.log(arrDouble(arr));
+
+
+//**** REVERSE STRING ****/
+
+const reverseStr = str => {
+  if (str.length === 0)
+    return str;
+
+  return reverseStr(str.slice(1)) + str[0];
+};
+
+console.log(reverseStr('kayla'));
